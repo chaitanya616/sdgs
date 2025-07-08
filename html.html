@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WildWave AI - Save Endangered Species</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>WildWave AI</h1>
+        <p>Saving Endangered Animals & Sea Creatures with AI</p>
+        <button id="missionBtn" class="btn">Our Mission</button>
+    </header>
+    <main>
+        <section id="mission">
+            <h2>Our Mission</h2>
+            <p>WildWave AI harnesses artificial intelligence to protect endangered species on land and sea, championing <strong>SDG 14 (Life Below Water)</strong> and <strong>SDG 15 (Life on Land)</strong>. We monitor habitats to fight poaching, pollution, and habitat loss.</p>
+        </section>
+        <section id="facts">
+            <h2>Endangered Species Facts</h2>
+            <div class="fact-grid">
+                <div class="fact-card" data-fact="amur">
+                    <div class="fact-front">
+                        <h3>Amur Leopard</h3>
+                        <p>~100 left in the wild</p>
+                    </div>
+                    <div class="fact-back">
+                        <p>AI tracks movements to stop poaching!</p>
+                    </div>
+                </div>
+                <div class="fact-card" data-fact="hawksbill">
+                    <div class="fact-front">
+                        <h3>Hawksbill Turtle</h3>
+                        <p>Threatened by fishing nets</p>
+                    </div>
+                    <div class="fact-back">
+                        <p>AI reduces bycatch in oceans!</p>
+                    </div>
+                </div>
+                <div class="fact-card" data-fact="orangutan">
+                    <div class="fact-front">
+                        <h3>Sumatran Orangutan</h3>
+                        <p><14,000 remain</p>
+                    </div>
+                    <div class="fact-back">
+                        <p>AI drones detect illegal logging!</p>
+                    </div>
+                </div>
+                <div class="fact-card" data-fact="vaquita">
+                    <div class="fact-front">
+                        <h3>Vaquita Porpoise</h3>
+                        <p><10 individuals left</p>
+                    </div>
+                    <div class="fact-back">
+                        <p>AI enforces protected ocean zones!</p>
+                    </div>
+                </div>
+                <div class="fact-card" data-fact="rhino">
+                    <div class="fact-front">
+                        <h3>Javan Rhino</h3>
+                        <p>~75 survive</p>
+                    </div>
+                    <div class="fact-back">
+                        <p>AI predicts poaching risks!</p>
+                    </div>
+                </div>
+                <div class="fact-card" data-fact="coral">
+                    <div class="fact-front">
+                        <h3>Coral Reefs</h3>
+                        <p>50% lost in decades</p>
+                    </div>
+                    <div class="fact-back">
+                        <p>AI guides coral restoration!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="impact">
+            <h2>Our Impact</h2>
+            <div class="counter-grid">
+                <div class="counter">
+                    <span id="animalCounter" class="count">0</span>
+                    <p>Animals Protected</p>
+                </div>
+                <div class="counter">
+                    <span id="oceanCounter" class="count">0</span>
+                    <p>Sq. Km of Ocean Monitored</p>
+                </div>
+                <div class="counter">
+                    <span id="habitatCounter" class="count">0</span>
+                    <p>Hectares of Habitat Saved</p>
+                </div>
+            </div>
+        </section>
+        <section id="join">
+            <h2>Join the Cause!</h2>
+            <div class="join-form">
+                <label for="joinType">How do you want to help?</label>
+                <select id="joinType" required>
+                    <option value="">Choose Online or Offline</option>
+                    <option value="online">Online</option>
+                    <option value="offline">Offline</option>
+                </select>
+                <div id="offlineForm" class="hidden">
+                    <label for="address">Enter Your Address:</label>
+                    <input type="text" id="address" placeholder="e.g., 123 Main St, City, Country">
+                </div>
+                <button id="joinBtn" class="btn">Join Now</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 WildWave AI. Protecting SDG 14 & 15.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
